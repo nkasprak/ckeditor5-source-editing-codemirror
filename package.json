@@ -46,7 +46,7 @@
     "@ckeditor/ckeditor5-table": ">=35.0.1",
     "@ckeditor/ckeditor5-theme-lark": ">=35.0.1",
     "@ckeditor/ckeditor5-upload": ">=35.0.1",
-    "@codemirror/lang-html": "^6.1.0",
+    "codemirror": "^5.65.8",
     "eslint": "^7.32.0",
     "eslint-config-ckeditor5": ">=4.0.1",
     "http-server": "^14.1.0",
