@@ -1,16 +1,8 @@
-import { MyPlugin as MyPluginDll, icons } from '../src';
-import MyPlugin from '../src/myplugin';
+import { SourceEditingCodeMirror as SourceEditingCodeMirrorDll } from '../src';
+import SourceEditingCodeMirror from '../src/sourceeditingcodemirror';
 
-import ckeditor from './../theme/icons/ckeditor.svg';
-
-describe( 'CKEditor5 MyPlugin DLL', () => {
-	it( 'exports MyPlugin', () => {
-		expect( MyPluginDll ).to.equal( MyPlugin );
-	} );
-
-	describe( 'icons', () => {
-		it( 'exports the "ckeditor" icon', () => {
-			expect( icons.ckeditor ).to.equal( ckeditor );
-		} );
+describe( 'CKEditor5 SourceEditingCodeMirror DLL', () => {
+	it( 'exports SourceEditingCodeMirror', () => {
+		expect( SourceEditingCodeMirrorDll ).to.equal( SourceEditingCodeMirror );
 	} );
 } );

@@ -3,3 +3,8 @@ coverage/
 node_modules/
 tmp/
 sample/ckeditor.dist.js
+
+# Files associated with specific development environments.
+.DS_Store
+.idea
+.vscode
