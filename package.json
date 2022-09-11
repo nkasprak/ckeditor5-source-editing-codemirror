@@ -9,6 +9,10 @@
     "ckeditor5-dll",
     "ckeditor5-package-generator"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/cdubz/ckeditor5-source-editing-codemirror"
+  },
   "main": "src/index.js",
   "license": "GPL-2.0-or-later",
   "engines": {
