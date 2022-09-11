@@ -1,6 +1,8 @@
 import { Plugin } from 'ckeditor5/src/core';
 import { global } from 'ckeditor5/src/utils';
 
+import '../theme/sourceeditingcodemirror.css';
+
 export default class SourceEditingCodeMirror extends Plugin {
 	/**
 	 * @inheritDoc
@@ -14,6 +16,16 @@ export default class SourceEditingCodeMirror extends Plugin {
 	 */
 	static get pluginName() {
 		return 'SourceEditingCodeMirror';
+	}
+
+	/**
+	* @inheritDoc
+	*/
+	constructor( editor ) {
+		super( editor );
+		editor.config.define( 'sourceEditingCodeMirror', {
+			options: global.window.CodeMirror.defaults
+		} );
 	}
 
 	/**
@@ -70,9 +82,7 @@ function enterEditingSourceMode( editor ) {
 
 	for ( const [ , viewWrapper ] of sourceEditing._replacedRoots ) {
 		const textarea = viewWrapper.childNodes[ 0 ];
-		const cmEditor = global.window.CodeMirror.fromTextArea( textarea, {
-			mode: 'htmlmixed'
-		} );
+		const cmEditor = global.window.CodeMirror.fromTextArea( textarea, editor.config.get( 'sourceEditingCodeMirror.options' ) );
 
 		cmEditor.on( 'change', () => {
 			textarea.value = cmEditor.getValue();

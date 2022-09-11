@@ -31,7 +31,6 @@ import SourceEditingCodeMirror from '../src/sourceeditingcodemirror';
 ClassicEditor
 	.create( document.querySelector( '#editor' ), {
 		plugins: [
-			SourceEditingCodeMirror,
 			Essentials,
 			Autoformat,
 			BlockQuote,
@@ -49,6 +48,7 @@ ClassicEditor
 			MediaEmbed,
 			Paragraph,
 			SourceEditing,
+			SourceEditingCodeMirror,
 			Table,
 			TableToolbar,
 			CodeBlock,

@@ -160,3 +160,7 @@ Examples:
 ```bash
 npm run translations:upload -- --transifex [API URL]
 ```
+
+## License
+
+Licensed under the terms of [GNU General Public License Version 2 or later](http://www.gnu.org/licenses/gpl.html).
