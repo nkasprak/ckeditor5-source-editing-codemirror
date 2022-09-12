@@ -1,6 +1,6 @@
 {
   "name": "@cdubz/ckeditor5-source-editing-codemirror",
-  "version": "0.9.0",
+  "version": "35.1.0",
   "description": "CodeMirror 5 syntax highlighting in CKEditor 5 source editing mode.",
   "keywords": [
     "ckeditor5",

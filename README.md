@@ -1,5 +1,9 @@
-@cdubz/ckeditor5-source-editing-codemirror
-==========================================
+CKEditor 5 CodeMirror feature
+=============================
+
+[![npm version](https://badge.fury.io/js/@cdubz%2Fckeditor5-source-editing-codemirror.svg)](https://www.npmjs.com/package/@cdubz/ckeditor5-source-editing-codemirror)
+
+Provides source editing formatting using [CodeMirror 5](https://codemirror.net/5/).
 
 This package was created by the [ckeditor5-package-generator](https://www.npmjs.com/package/ckeditor5-package-generator) package.
 
