@@ -1,6 +1,6 @@
 {
   "name": "@cdubz/ckeditor5-source-editing-codemirror",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "CodeMirror 5 syntax highlighting in CKEditor 5 source editing mode.",
   "keywords": [
     "ckeditor5",
@@ -10,8 +10,8 @@
     "ckeditor5-package-generator"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/cdubz/ckeditor5-source-editing-codemirror"
+    "type": "git",
+    "url": "https://github.com/cdubz/ckeditor5-source-editing-codemirror"
   },
   "main": "src/index.js",
   "license": "GPL-2.0-or-later",
@@ -54,7 +54,6 @@
     "eslint": "^7.32.0",
     "eslint-config-ckeditor5": ">=4.0.1",
     "http-server": "^14.1.1",
-    "lint-staged": "^10.2.6",
     "stylelint": "^13.13.1",
     "stylelint-config-ckeditor5": ">=4.0.1"
   },
@@ -69,13 +68,5 @@
     "translations:collect": "ckeditor5-package-tools translations:collect",
     "translations:download": "ckeditor5-package-tools translations:download",
     "translations:upload": "ckeditor5-package-tools translations:upload"
-  },
-  "lint-staged": {
-    "**/*.js": [
-      "eslint --quiet"
-    ],
-    "**/*.css": [
-      "stylelint --quiet --allow-empty-input"
-    ]
   }
 }
